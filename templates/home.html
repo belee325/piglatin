@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Piglatin Translator</title>
 </head>
 <body>
-$END$
+    <h1>
+        A simple django app to translate to pig latin
+    </h1>
+    <form action = "{%url  'translate'%}">
+        <input type = "text" name="input_text"/>
+        <br />
+        <input type ="Submit" value = "Translate">
+    </form>
+    <br/>
+    <a href="{%url 'about' %}"> About this page</a>
 </body>
 </html>
